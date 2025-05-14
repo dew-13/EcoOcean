@@ -1,0 +1,128 @@
+.content {
+	display:flex;	
+	gap:20px;
+}
+		 
+.sidebar {	
+	display:flex;
+    flex-direction:column;
+    background-color:#94d2bd;
+    width:25%;			
+	margin:20px;
+	border-radius:100px 100px 100px 100px;
+    box-sizing: border-box;
+}	     
+	
+.navigation {
+	margin-left:25px;
+    padding:0px;  			
+}
+
+.title {
+    padding: 25px; 
+    text-align: left;  
+}
+
+.title img {
+    border-radius: 50%; 
+}
+
+.title h2 {
+    display: inline-block;
+    margin-top: 50px;
+	margin-left:40px;
+    color:#194052;
+	font-family: 'Bodoni Moda SC:', variable;	
+	font-size:2rem;
+}		  
+        
+.navigation ul li {		
+    padding-top:20px;
+}
+
+.logout span {
+    color:red;
+}	 
+			
+.navigation  a {
+    display:flex;	
+	align-items: center;
+	font-size:1.2rem;
+	color:black;  
+	border-top-left-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+    padding:30px;	
+    font-family: 'Libre Baskerville', static;			 			 
+}
+		        
+.navigation a:hover,
+.navigation a.active {
+	background-color:white;
+	padding:25px;
+	color:#08CFCA;
+} 
+		  
+.material-icons-outlined {            
+    margin-right: 15px;         	 
+}
+
+.sidebar img {
+    border-radius:50%;	
+	margin-right: 5px;
+	border:1px solid black;
+}
+		
+.Orders {
+    background-color: white;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: baseline;
+    background-color: #08CFCA;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.greeting {
+    color: #05445E;
+    margin-right: 8px;
+    line-height: 1.2;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.names {
+    color: #0A3D62;
+    font-size: 24pt;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+
+
+/* table style for orders page */
+
+.ord table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ord table, .ord th, .ord td {
+    border: 1px solid #ddd;
+}
+.ord th, .ord td {
+    padding: 12px;
+    text-align: left;
+}
+.ord th {
+    background-color: #194052;
+    color: white;
+}
+.ord tr:nth-child(even){
+    background-color: #f2f2f2;
+}

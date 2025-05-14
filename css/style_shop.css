@@ -1,0 +1,225 @@
+/* Background Image Changer */
+.fashion-change {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.image-change {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.text-change {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Category Selection Buttons */
+.category-selection {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #005f73;
+}
+
+.category-selection button {
+    background-color: #08CFCA;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin: 10px;
+    font-size: 14pt;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.category-selection button:hover {
+    background-color: #0a9396;
+}
+
+
+
+/* Item Display */
+.item-display {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.item-display .item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-display img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.item-display p {
+    margin-top: 10px;
+    font-size: 12pt;
+    color: #333;
+}
+
+.item-display button {
+    background-color: #08CFCA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #194052;
+    transition: 0.2s ease-in-out;
+}
+
+.item-display button:hover {
+    background-color: #ee9b00;
+    color: white;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-modal {
+    margin-top: 50px;
+    width: 45%;
+}
+
+.left-modal img{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-modal p {
+    font-size: 18pt;
+    margin: 10px 0;
+}
+
+
+.right-modal {
+    width: 50%;
+}
+
+.right-modal form {
+    margin-top: 20px;
+}
+
+.right-modal form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right-modal form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.right-modal form button {
+    padding: 10px 20px;
+    font-size: 14pt;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-modal form button:hover {
+    background-color: #0a9396;
+}
+
+
+.size-pick {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.right-modal #total-price {
+    border: none;
+    text-align: center;
+    width: 50%;
+    font-size: 14pt;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
